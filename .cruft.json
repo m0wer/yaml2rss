@@ -1,6 +1,6 @@
 {
   "template": "https://github.com/m0wer/cookiecutter-python-project",
-  "commit": "2d241081ce15691b16c6874c518132bfe2365c6e",
+  "commit": "8d86b2caf1991904f45ad8dce26a6daa72335c06",
   "checkout": null,
   "context": {
     "cookiecutter": {
