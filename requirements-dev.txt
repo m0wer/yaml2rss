@@ -10,6 +10,8 @@ attrs==21.4.0
     # via pytest
 certifi==2021.10.8
     # via requests
+cfgv==3.3.1
+    # via pre-commit
 charset-normalizer==2.0.10
     # via requests
 click==8.0.3
@@ -18,10 +20,18 @@ click==8.0.3
     #   -c requirements.txt
     #   pip-tools
     #   typer
+distlib==0.3.4
+    # via virtualenv
+filelock==3.4.2
+    # via virtualenv
+identify==2.4.5
+    # via pre-commit
 idna==3.3
     # via requests
 iniconfig==1.1.1
     # via pytest
+nodeenv==1.6.0
+    # via pre-commit
 packaging==21.0
     # via
     #   -c docs/requirements.txt
@@ -30,8 +40,12 @@ pep517==0.12.0
     # via pip-tools
 pip-tools==6.4.0
     # via -r requirements-dev.in
+platformdirs==2.4.1
+    # via virtualenv
 pluggy==1.0.0
     # via pytest
+pre-commit==2.17.0
+    # via -r requirements-dev.in
 py==1.11.0
     # via pytest
 pydantic==1.9.0
@@ -48,11 +62,20 @@ pytest==6.2.5
     #   pytest-asyncio
 pytest-asyncio==0.17.2
     # via -r requirements-dev.in
+pyyaml==5.4.1
+    # via
+    #   -c docs/requirements.txt
+    #   pre-commit
 requests==2.27.1
     # via -r requirements-dev.in
+six==1.16.0
+    # via
+    #   -c docs/requirements.txt
+    #   virtualenv
 toml==0.10.2
     # via
     #   -r requirements-dev.in
+    #   pre-commit
     #   pytest
 tomli==2.0.0
     # via pep517
@@ -66,6 +89,8 @@ typing-extensions==4.0.1
     #   pydantic
 urllib3==1.26.8
     # via requests
+virtualenv==20.13.0
+    # via pre-commit
 wheel==0.37.1
     # via pip-tools
 
