@@ -1,0 +1,25 @@
+{
+  "template": "https://github.com/m0wer/cookiecutter-python-project",
+  "commit": "2d241081ce15691b16c6874c518132bfe2365c6e",
+  "checkout": null,
+  "context": {
+    "cookiecutter": {
+      "project_name": "yaml2rss",
+      "project_slug": "yaml2rss",
+      "project_slug_hyphen": "yaml2rss",
+      "project_description": "Generate a RSS podcast feed from YAML.",
+      "requirements": "pydantic,typer",
+      "github_user": "m0wer",
+      "github_organization": "m0wer",
+      "github_token_pass_command": "pass secure/web/github/api_token",
+      "repo_name": "yaml2rss",
+      "full_repo_name": "m0wer/yaml2rss",
+      "repo_url": "https://github.com/m0wer/yaml2rss",
+      "docs_url": "https://m0wer.github.io/yaml2rss/",
+      "author": "m0wer",
+      "author_email": "m0wer@autistici.org",
+      "_template": "https://github.com/m0wer/cookiecutter-python-project"
+    }
+  },
+  "directory": null
+}
