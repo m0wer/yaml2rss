@@ -11,8 +11,8 @@ https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit&log
 
 Run `pip install .`.
 
-For podcast generation you will need to install `sndifile`
-(e.g., `apt-get install libsndfile-dev`).
+For podcast generation you will need to install `sndifile` and `ffmpeg`
+(e.g., `apt-get install libsndfile-dev ffmpeg`).
 
 ## Usage
 
