@@ -35,7 +35,9 @@ jobs:
             ${{ runner.os }}-pip-
 
       - name: Install dependencies
-        run: make install
+        run: |
+          sudo apt-get install -y libsndfile-dev
+          make install
 
       - name: Disable pre-commit
         run: pre-commit uninstall
