@@ -3,6 +3,7 @@ __pycache__/
 *.egg-info/
 *.egg
 
-.mypy_cache
+.mypy_cache/
+.ropeproject/
 
 docs/site/

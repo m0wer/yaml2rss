@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"
+    xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">
+  <channel>
+        <title>{{ title }}</title>
+        <description>{{ description }}</description>
+        <link>{{ link }}</link>
+        <image>
+            <url>{{ link }}{{ image_path }}</url>
+            <title>{{ image_title | default(title) }}</title>
+            <link>{{ link }}</link>
+        </image>
+        <lastBuildDate>{{ last_build_date | date_to_rfc2822 }}</lastBuildDate>
+        <author>{{ author }}</author>
+        <copyright>{{ author | default(author) }}</copyright>
+        <language>{{ language }}</language>
+        <itunes:author>{{ author }}</itunes:author>
+        <itunes:summary>{{ description }}</itunes:summary>
+        <itunes:type>episodic</itunes:type>
+        <itunes:owner>
+            <itunes:name>{{ author }}</itunes:name>
+            <itunes:email>{{ email }}</itunes:email>
+        </itunes:owner>
+        <itunes:explicit>No</itunes:explicit>
+        <itunes:category text="History"/>
+        <itunes:image href="{{ link }}{{ image_path }}"/>
+
+        {% for season in seasons %}
+        {% set seasons_loop = loop %}
+        {% for episode in season.episodes %}
+        <item>
+            <title>{{ episode.title }}</title>
+            <description>{{ episode.description }}</description>
+            <pubDate>{{ episode.pub_date | date_to_rfc2822 }}</pubDate>
+            <enclosure url="{{ episode.url }}" length="{{ episode.file_details.length }}" type="{{ episode.file_details.type }}"/>
+            <itunes:summary>{{ episode.description }}</itunes:summary>
+            <itunes:explicit>No</itunes:explicit>
+            <itunes:duration>{{ episode.file_details.duration }}</itunes:duration>
+            <itunes:season>{{ seasons_loop.index }}</itunes:season>
+            <itunes:episode>{{ loop.index }}</itunes:episode>
+            <itunes:episodeType>full</itunes:episodeType>
+        </item>
+        {% endfor %}
+        {% endfor %}
+    </channel>
+</rss>

@@ -30,6 +30,16 @@ idna==3.3
     # via requests
 iniconfig==1.1.1
     # via pytest
+jinja2==3.0.3
+    # via
+    #   -c docs/requirements.txt
+    #   -c requirements.txt
+    #   yaml2rss
+markupsafe==2.0.1
+    # via
+    #   -c docs/requirements.txt
+    #   -c requirements.txt
+    #   jinja2
 nodeenv==1.6.0
     # via pre-commit
 packaging==21.0
@@ -62,10 +72,12 @@ pytest==6.2.5
     #   pytest-asyncio
 pytest-asyncio==0.17.2
     # via -r requirements-dev.in
-pyyaml==5.4.1
+pyyaml==6.0
     # via
     #   -c docs/requirements.txt
+    #   -c requirements.txt
     #   pre-commit
+    #   yaml2rss
 requests==2.27.1
     # via -r requirements-dev.in
 six==1.16.0

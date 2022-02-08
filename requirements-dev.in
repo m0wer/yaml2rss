@@ -9,3 +9,4 @@ pytest
 pytest-asyncio
 requests
 toml
+types-PyYAML
