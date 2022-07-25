@@ -17,9 +17,9 @@ update:
 	@echo "-------------------------"
 	python -m piptools sync requirements.txt docs/requirements.txt requirements-dev.txt
 
-	pip-compile --allow-unsafe
-	pip-compile --allow-unsafe docs/requirements.in
-	pip-compile --allow-unsafe requirements-dev.in
+	pip-compile --upgrade --allow-unsafe
+	pip-compile --upgrade --allow-unsafe docs/requirements.in
+	pip-compile --upgrade --allow-unsafe requirements-dev.in
 
 	python -m piptools sync requirements.txt docs/requirements.txt requirements-dev.txt
 
