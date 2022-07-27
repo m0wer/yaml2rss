@@ -9,7 +9,7 @@ plugins:
   - autolinks
   - gen-files:
       scripts:
-        - generate_reference.py
+        - docs/generate_reference.py
   - mkdocstrings:
       default_handler: python
       handlers:
@@ -22,7 +22,7 @@ plugins:
           rendering:
             show_source: true
       watch:
-        - ../yaml2rss
+        - ./yaml2rss
   - git-revision-date-localized:
       type: timeago
       fallback_to_build_date: true
