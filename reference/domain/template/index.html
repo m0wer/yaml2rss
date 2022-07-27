@@ -1,0 +1,2900 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://m0wer.github.io/yaml2rss/reference/domain/template/">
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.3.1, mkdocs-material-8.3.9">
+    
+    
+      
+        <title>Template - yaml2rss documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.1d29e8d0.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.cbb835fc.min.css">
+        
+      
+      
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../../css/timeago.css">
+    
+      <link rel="stylesheet" href="../../../assets/_mkdocstrings.css">
+    
+    <script>__md_scope=new URL("../../..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="blue-grey" data-md-color-accent="light-blue">
+  
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#yaml2rss.domain.template" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="yaml2rss documentation" class="md-header__button md-logo" aria-label="yaml2rss documentation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            yaml2rss documentation
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Template
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      <form class="md-header__option" data-md-component="palette">
+        
+          
+          
+          <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="blue-grey" data-md-color-accent="light-blue"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+          
+            <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 6H7c-3.31 0-6 2.69-6 6s2.69 6 6 6h10c3.31 0 6-2.69 6-6s-2.69-6-6-6zm0 10H7c-2.21 0-4-1.79-4-4s1.79-4 4-4h10c2.21 0 4 1.79 4 4s-1.79 4-4 4zM7 9c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></svg>
+            </label>
+          
+        
+          
+          
+          <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="blue-grey" data-md-color-accent="light-blue"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_2">
+          
+            <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3Z"/></svg>
+            </label>
+          
+        
+      </form>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/m0wer/yaml2rss" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    yaml2rss
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="yaml2rss documentation" class="md-nav__button md-logo" aria-label="yaml2rss documentation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    yaml2rss documentation
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/m0wer/yaml2rss" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    yaml2rss
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        yaml2rss documentation
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2">
+          Howto
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Howto" data-md-level="1">
+        <label class="md-nav__title" for="__nav_2">
+          <span class="md-nav__icon md-icon"></span>
+          Howto
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../howto/contributing/" class="md-nav__link">
+        Contributing
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../howto/dependencies/" class="md-nav__link">
+        Dependencies
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../howto/testing/" class="md-nav__link">
+        Testing
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" checked>
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3">
+          Reference
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Reference" data-md-level="1">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          Reference
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../__init__/" class="md-nav__link">
+          init  
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_2" type="checkbox" id="__nav_3_2" checked>
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3_2">
+          Domain
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Domain" data-md-level="2">
+        <label class="md-nav__title" for="__nav_3_2">
+          <span class="md-nav__icon md-icon"></span>
+          Domain
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Template
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Template
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#yaml2rss.domain.template" class="md-nav__link">
+    yaml2rss.domain.template
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#yaml2rss.domain.template.EpisodeConfig" class="md-nav__link">
+    EpisodeConfig
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#yaml2rss.domain.template.FileDetails" class="md-nav__link">
+    FileDetails
+  </a>
+  
+    <nav class="md-nav" aria-label="FileDetails">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#yaml2rss.domain.template.FileDetails.validate_duration" class="md-nav__link">
+    validate_duration()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#yaml2rss.domain.template.FileDetails.validate_length" class="md-nav__link">
+    validate_length()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#yaml2rss.domain.template.FileDetails.validate_type" class="md-nav__link">
+    validate_type()
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#yaml2rss.domain.template.PodcastEpisodeConfig" class="md-nav__link">
+    PodcastEpisodeConfig
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#yaml2rss.domain.template.PodcastSeasonConfig" class="md-nav__link">
+    PodcastSeasonConfig
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#yaml2rss.domain.template.PodcastTemplateConfig" class="md-nav__link">
+    PodcastTemplateConfig
+  </a>
+  
+    <nav class="md-nav" aria-label="PodcastTemplateConfig">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#yaml2rss.domain.template.PodcastTemplateConfig.validate_episode_file" class="md-nav__link">
+    validate_episode_file()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#yaml2rss.domain.template.PodcastTemplateConfig.validate_episode_url" class="md-nav__link">
+    validate_episode_url()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#yaml2rss.domain.template.PodcastTemplateConfig.validate_files_root_url" class="md-nav__link">
+    validate_files_root_url()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#yaml2rss.domain.template.PodcastTemplateConfig.validate_image_title" class="md-nav__link">
+    validate_image_title()
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#yaml2rss.domain.template.SeasonConfig" class="md-nav__link">
+    SeasonConfig
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#yaml2rss.domain.template.TemplateConfig" class="md-nav__link">
+    TemplateConfig
+  </a>
+  
+    <nav class="md-nav" aria-label="TemplateConfig">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#yaml2rss.domain.template.TemplateConfig.validate_copyright" class="md-nav__link">
+    validate_copyright()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#yaml2rss.domain.template.TemplateConfig.validate_episode_author" class="md-nav__link">
+    validate_episode_author()
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#yaml2rss.domain.template.render" class="md-nav__link">
+    render()
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_3" type="checkbox" id="__nav_3_3" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3_3">
+          Entrypoint
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Entrypoint" data-md-level="2">
+        <label class="md-nav__title" for="__nav_3_3">
+          <span class="md-nav__icon md-icon"></span>
+          Entrypoint
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_3_1" type="checkbox" id="__nav_3_3_1" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3_3_1">
+          Cli
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Cli" data-md-level="3">
+        <label class="md-nav__title" for="__nav_3_3_1">
+          <span class="md-nav__icon md-icon"></span>
+          Cli
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../entrypoint/cli/main/" class="md-nav__link">
+        Main
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_3_1_2" type="checkbox" id="__nav_3_3_1_2" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3_3_1_2">
+          Scopes
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Scopes" data-md-level="4">
+        <label class="md-nav__title" for="__nav_3_3_1_2">
+          <span class="md-nav__icon md-icon"></span>
+          Scopes
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../entrypoint/cli/scopes/generate/" class="md-nav__link">
+        Generate
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_4" type="checkbox" id="__nav_3_4" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3_4">
+          Service
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Service" data-md-level="2">
+        <label class="md-nav__title" for="__nav_3_4">
+          <span class="md-nav__icon md-icon"></span>
+          Service
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../service/jinja_environment/" class="md-nav__link">
+        Jinja environment
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../service/service/" class="md-nav__link">
+        Service
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_4">
+          Topics
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Topics" data-md-level="1">
+        <label class="md-nav__title" for="__nav_4">
+          <span class="md-nav__icon md-icon"></span>
+          Topics
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../topics/code_structure/" class="md-nav__link">
+        Code structure
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" type="checkbox" id="__nav_5" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_5">
+          Tutorials
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Tutorials" data-md-level="1">
+        <label class="md-nav__title" for="__nav_5">
+          <span class="md-nav__icon md-icon"></span>
+          Tutorials
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../tutorials/docker/" class="md-nav__link">
+        Docker
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../tutorials/getting_started/" class="md-nav__link">
+        Getting started
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#yaml2rss.domain.template" class="md-nav__link">
+    yaml2rss.domain.template
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#yaml2rss.domain.template.EpisodeConfig" class="md-nav__link">
+    EpisodeConfig
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#yaml2rss.domain.template.FileDetails" class="md-nav__link">
+    FileDetails
+  </a>
+  
+    <nav class="md-nav" aria-label="FileDetails">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#yaml2rss.domain.template.FileDetails.validate_duration" class="md-nav__link">
+    validate_duration()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#yaml2rss.domain.template.FileDetails.validate_length" class="md-nav__link">
+    validate_length()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#yaml2rss.domain.template.FileDetails.validate_type" class="md-nav__link">
+    validate_type()
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#yaml2rss.domain.template.PodcastEpisodeConfig" class="md-nav__link">
+    PodcastEpisodeConfig
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#yaml2rss.domain.template.PodcastSeasonConfig" class="md-nav__link">
+    PodcastSeasonConfig
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#yaml2rss.domain.template.PodcastTemplateConfig" class="md-nav__link">
+    PodcastTemplateConfig
+  </a>
+  
+    <nav class="md-nav" aria-label="PodcastTemplateConfig">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#yaml2rss.domain.template.PodcastTemplateConfig.validate_episode_file" class="md-nav__link">
+    validate_episode_file()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#yaml2rss.domain.template.PodcastTemplateConfig.validate_episode_url" class="md-nav__link">
+    validate_episode_url()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#yaml2rss.domain.template.PodcastTemplateConfig.validate_files_root_url" class="md-nav__link">
+    validate_files_root_url()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#yaml2rss.domain.template.PodcastTemplateConfig.validate_image_title" class="md-nav__link">
+    validate_image_title()
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#yaml2rss.domain.template.SeasonConfig" class="md-nav__link">
+    SeasonConfig
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#yaml2rss.domain.template.TemplateConfig" class="md-nav__link">
+    TemplateConfig
+  </a>
+  
+    <nav class="md-nav" aria-label="TemplateConfig">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#yaml2rss.domain.template.TemplateConfig.validate_copyright" class="md-nav__link">
+    validate_copyright()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#yaml2rss.domain.template.TemplateConfig.validate_episode_author" class="md-nav__link">
+    validate_episode_author()
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#yaml2rss.domain.template.render" class="md-nav__link">
+    render()
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+
+
+  <h1>Template</h1>
+
+<div class="doc doc-object doc-module">
+
+<a id="yaml2rss.domain.template"></a>
+    <div class="doc doc-contents first">
+
+      <p>Module to store the template domain functions and classes.</p>
+
+
+
+  <div class="doc doc-children">
+
+
+
+
+
+
+
+
+
+
+
+  <div class="doc doc-object doc-class">
+
+
+
+<h2 id="yaml2rss.domain.template.EpisodeConfig" class="doc doc-heading">
+        <code>
+EpisodeConfig            (<span title="pydantic.main.BaseModel">BaseModel</span>)
+        </code>
+
+
+  <span class="doc doc-properties">
+      <small class="doc doc-property doc-property-pydantic-model"><code>pydantic-model</code></small>
+  </span>
+
+</h2>
+
+    <div class="doc doc-contents ">
+
+      <p>Episode configuration.</p>
+
+<p><strong>Attributes:</strong></p>
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+      <tr>
+        <td><code>title</code></td>
+        <td><code>str</code></td>
+        <td><p>Episode title.</p></td>
+      </tr>
+      <tr>
+        <td><code>description</code></td>
+        <td><code>str</code></td>
+        <td><p>Episode description.</p></td>
+      </tr>
+      <tr>
+        <td><code>pub_date</code></td>
+        <td><code>datetime</code></td>
+        <td><p>Episode publication date.</p></td>
+      </tr>
+      <tr>
+        <td><code>url</code></td>
+        <td><code>str</code></td>
+        <td><p>Episode URL.</p></td>
+      </tr>
+      <tr>
+        <td><code>author</code></td>
+        <td><code>str</code></td>
+        <td><p>Episode author.</p></td>
+      </tr>
+  </tbody>
+</table>
+        <details class="quote">
+          <summary>Source code in <code>yaml2rss/domain/template.py</code></summary>
+          <div class="highlight"><pre><span></span><code><span class="k">class</span> <span class="nc">EpisodeConfig</span><span class="p">(</span><span class="n">BaseModel</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Episode configuration.</span>
+
+<span class="sd">    Attributes:</span>
+<span class="sd">        title: Episode title.</span>
+<span class="sd">        description: Episode description.</span>
+<span class="sd">        pub_date: Episode publication date.</span>
+<span class="sd">        url: Episode URL.</span>
+<span class="sd">        author: Episode author.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="n">title</span><span class="p">:</span> <span class="nb">str</span>
+    <span class="n">description</span><span class="p">:</span> <span class="nb">str</span>
+    <span class="n">pub_date</span><span class="p">:</span> <span class="n">datetime</span>
+    <span class="n">url</span><span class="p">:</span> <span class="nb">str</span>
+    <span class="n">author</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="kc">None</span>
+</code></pre></div>
+        </details>
+
+
+
+  <div class="doc doc-children">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+
+    </div>
+
+  </div>
+
+
+
+  <div class="doc doc-object doc-class">
+
+
+
+<h2 id="yaml2rss.domain.template.FileDetails" class="doc doc-heading">
+        <code>
+FileDetails            (<span title="pydantic.main.BaseModel">BaseModel</span>)
+        </code>
+
+
+  <span class="doc doc-properties">
+      <small class="doc doc-property doc-property-pydantic-model"><code>pydantic-model</code></small>
+  </span>
+
+</h2>
+
+    <div class="doc doc-contents ">
+
+      <p>File details.</p>
+
+<p><strong>Attributes:</strong></p>
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+      <tr>
+        <td><code>file</code></td>
+        <td><code>FilePath</code></td>
+        <td><p>File path.</p></td>
+      </tr>
+      <tr>
+        <td><code>length</code></td>
+        <td><code>int</code></td>
+        <td><p>File length in bytes.</p></td>
+      </tr>
+      <tr>
+        <td><code>duration</code></td>
+        <td><code>int</code></td>
+        <td><p>File duration in seconds.</p></td>
+      </tr>
+      <tr>
+        <td><code>type</code></td>
+        <td><code>str</code></td>
+        <td><p>File mime type.</p></td>
+      </tr>
+  </tbody>
+</table>
+        <details class="quote">
+          <summary>Source code in <code>yaml2rss/domain/template.py</code></summary>
+          <div class="highlight"><pre><span></span><code><span class="k">class</span> <span class="nc">FileDetails</span><span class="p">(</span><span class="n">BaseModel</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;File details.</span>
+
+<span class="sd">    Attributes:</span>
+<span class="sd">        file: File path.</span>
+<span class="sd">        length: File length in bytes.</span>
+<span class="sd">        duration: File duration in seconds.</span>
+<span class="sd">        type: File mime type.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="n">file</span><span class="p">:</span> <span class="n">FilePath</span>
+    <span class="n">length</span><span class="p">:</span> <span class="nb">int</span>
+    <span class="n">duration</span><span class="p">:</span> <span class="nb">int</span>
+    <span class="nb">type</span><span class="p">:</span> <span class="nb">str</span>
+
+    <span class="nd">@root_validator</span><span class="p">(</span><span class="n">pre</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+    <span class="nd">@classmethod</span>
+    <span class="k">def</span> <span class="nf">validate_length</span><span class="p">(</span><span class="bp">cls</span><span class="p">,</span> <span class="n">values</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Get file length in bytes if None.</span>
+
+<span class="sd">        Arguments:</span>
+<span class="sd">            cls: Class.</span>
+<span class="sd">            values: Instance initialization values.</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">            Values with required modifications.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="s2">&quot;length&quot;</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">values</span> <span class="ow">or</span> <span class="n">values</span><span class="p">[</span><span class="s2">&quot;length&quot;</span><span class="p">]</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="n">values</span><span class="p">[</span><span class="s2">&quot;length&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">getsize</span><span class="p">(</span><span class="n">values</span><span class="p">[</span><span class="s2">&quot;file&quot;</span><span class="p">])</span>
+
+        <span class="k">return</span> <span class="n">values</span>
+
+    <span class="nd">@root_validator</span><span class="p">(</span><span class="n">pre</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+    <span class="nd">@classmethod</span>
+    <span class="k">def</span> <span class="nf">validate_duration</span><span class="p">(</span><span class="bp">cls</span><span class="p">,</span> <span class="n">values</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Get file duration in seconds if None.</span>
+
+<span class="sd">        Arguments:</span>
+<span class="sd">            cls: Class.</span>
+<span class="sd">            values: Instance initialization values.</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">            Values with required modifications.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="s2">&quot;duration&quot;</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">values</span> <span class="ow">or</span> <span class="n">values</span><span class="p">[</span><span class="s2">&quot;duration&quot;</span><span class="p">]</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="n">values</span><span class="p">[</span><span class="s2">&quot;duration&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">get_duration</span><span class="p">(</span><span class="n">filename</span><span class="o">=</span><span class="n">values</span><span class="p">[</span><span class="s2">&quot;file&quot;</span><span class="p">]))</span>
+
+        <span class="k">return</span> <span class="n">values</span>
+
+    <span class="nd">@root_validator</span><span class="p">(</span><span class="n">pre</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+    <span class="nd">@classmethod</span>
+    <span class="k">def</span> <span class="nf">validate_type</span><span class="p">(</span><span class="bp">cls</span><span class="p">,</span> <span class="n">values</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Get file mime type if None.</span>
+
+<span class="sd">        Arguments:</span>
+<span class="sd">            cls: Class.</span>
+<span class="sd">            values: Instance initialization values.</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">            Values with required modifications.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="s2">&quot;type&quot;</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">values</span> <span class="ow">or</span> <span class="n">values</span><span class="p">[</span><span class="s2">&quot;type&quot;</span><span class="p">]</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="n">values</span><span class="p">[</span><span class="s2">&quot;type&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">mime</span><span class="o">.</span><span class="n">from_file</span><span class="p">(</span><span class="n">values</span><span class="p">[</span><span class="s2">&quot;file&quot;</span><span class="p">])</span>
+
+        <span class="k">if</span> <span class="n">values</span><span class="p">[</span><span class="s2">&quot;type&quot;</span><span class="p">]</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">SUPPORTED_AUDIO_MIME_TYPES</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="n">ValidationError</span><span class="p">()</span>
+
+        <span class="k">return</span> <span class="n">values</span>
+</code></pre></div>
+        </details>
+
+
+
+  <div class="doc doc-children">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="doc doc-object doc-method">
+
+
+
+<h3 id="yaml2rss.domain.template.FileDetails.validate_duration" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">validate_duration</span><span class="p">(</span><span class="n">values</span><span class="p">)</span></code>
+
+  <span class="doc doc-properties">
+      <small class="doc doc-property doc-property-classmethod"><code>classmethod</code></small>
+  </span>
+
+</h3>
+
+    <div class="doc doc-contents ">
+
+      <p>Get file duration in seconds if None.</p>
+
+<p><strong>Parameters:</strong></p>
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Type</th>
+      <th>Description</th>
+      <th>Default</th>
+    </tr>
+  </thead>
+  <tbody>
+      <tr>
+        <td><code>cls</code></td>
+        <td></td>
+        <td><p>Class.</p></td>
+        <td><em>required</em></td>
+      </tr>
+      <tr>
+        <td><code>values</code></td>
+        <td></td>
+        <td><p>Instance initialization values.</p></td>
+        <td><em>required</em></td>
+      </tr>
+  </tbody>
+</table>
+<p><strong>Returns:</strong></p>
+<table>
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td></td>
+      <td><p>Values with required modifications.</p></td>
+    </tr>
+  </tbody>
+</table>
+        <details class="quote">
+          <summary>Source code in <code>yaml2rss/domain/template.py</code></summary>
+          <div class="highlight"><pre><span></span><code><span class="nd">@root_validator</span><span class="p">(</span><span class="n">pre</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="nd">@classmethod</span>
+<span class="k">def</span> <span class="nf">validate_duration</span><span class="p">(</span><span class="bp">cls</span><span class="p">,</span> <span class="n">values</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Get file duration in seconds if None.</span>
+
+<span class="sd">    Arguments:</span>
+<span class="sd">        cls: Class.</span>
+<span class="sd">        values: Instance initialization values.</span>
+
+<span class="sd">    Returns:</span>
+<span class="sd">        Values with required modifications.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">if</span> <span class="s2">&quot;duration&quot;</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">values</span> <span class="ow">or</span> <span class="n">values</span><span class="p">[</span><span class="s2">&quot;duration&quot;</span><span class="p">]</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="n">values</span><span class="p">[</span><span class="s2">&quot;duration&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">get_duration</span><span class="p">(</span><span class="n">filename</span><span class="o">=</span><span class="n">values</span><span class="p">[</span><span class="s2">&quot;file&quot;</span><span class="p">]))</span>
+
+    <span class="k">return</span> <span class="n">values</span>
+</code></pre></div>
+        </details>
+    </div>
+
+  </div>
+
+
+
+  <div class="doc doc-object doc-method">
+
+
+
+<h3 id="yaml2rss.domain.template.FileDetails.validate_length" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">validate_length</span><span class="p">(</span><span class="n">values</span><span class="p">)</span></code>
+
+  <span class="doc doc-properties">
+      <small class="doc doc-property doc-property-classmethod"><code>classmethod</code></small>
+  </span>
+
+</h3>
+
+    <div class="doc doc-contents ">
+
+      <p>Get file length in bytes if None.</p>
+
+<p><strong>Parameters:</strong></p>
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Type</th>
+      <th>Description</th>
+      <th>Default</th>
+    </tr>
+  </thead>
+  <tbody>
+      <tr>
+        <td><code>cls</code></td>
+        <td></td>
+        <td><p>Class.</p></td>
+        <td><em>required</em></td>
+      </tr>
+      <tr>
+        <td><code>values</code></td>
+        <td></td>
+        <td><p>Instance initialization values.</p></td>
+        <td><em>required</em></td>
+      </tr>
+  </tbody>
+</table>
+<p><strong>Returns:</strong></p>
+<table>
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td></td>
+      <td><p>Values with required modifications.</p></td>
+    </tr>
+  </tbody>
+</table>
+        <details class="quote">
+          <summary>Source code in <code>yaml2rss/domain/template.py</code></summary>
+          <div class="highlight"><pre><span></span><code><span class="nd">@root_validator</span><span class="p">(</span><span class="n">pre</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="nd">@classmethod</span>
+<span class="k">def</span> <span class="nf">validate_length</span><span class="p">(</span><span class="bp">cls</span><span class="p">,</span> <span class="n">values</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Get file length in bytes if None.</span>
+
+<span class="sd">    Arguments:</span>
+<span class="sd">        cls: Class.</span>
+<span class="sd">        values: Instance initialization values.</span>
+
+<span class="sd">    Returns:</span>
+<span class="sd">        Values with required modifications.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">if</span> <span class="s2">&quot;length&quot;</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">values</span> <span class="ow">or</span> <span class="n">values</span><span class="p">[</span><span class="s2">&quot;length&quot;</span><span class="p">]</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="n">values</span><span class="p">[</span><span class="s2">&quot;length&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">getsize</span><span class="p">(</span><span class="n">values</span><span class="p">[</span><span class="s2">&quot;file&quot;</span><span class="p">])</span>
+
+    <span class="k">return</span> <span class="n">values</span>
+</code></pre></div>
+        </details>
+    </div>
+
+  </div>
+
+
+
+  <div class="doc doc-object doc-method">
+
+
+
+<h3 id="yaml2rss.domain.template.FileDetails.validate_type" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">validate_type</span><span class="p">(</span><span class="n">values</span><span class="p">)</span></code>
+
+  <span class="doc doc-properties">
+      <small class="doc doc-property doc-property-classmethod"><code>classmethod</code></small>
+  </span>
+
+</h3>
+
+    <div class="doc doc-contents ">
+
+      <p>Get file mime type if None.</p>
+
+<p><strong>Parameters:</strong></p>
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Type</th>
+      <th>Description</th>
+      <th>Default</th>
+    </tr>
+  </thead>
+  <tbody>
+      <tr>
+        <td><code>cls</code></td>
+        <td></td>
+        <td><p>Class.</p></td>
+        <td><em>required</em></td>
+      </tr>
+      <tr>
+        <td><code>values</code></td>
+        <td></td>
+        <td><p>Instance initialization values.</p></td>
+        <td><em>required</em></td>
+      </tr>
+  </tbody>
+</table>
+<p><strong>Returns:</strong></p>
+<table>
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td></td>
+      <td><p>Values with required modifications.</p></td>
+    </tr>
+  </tbody>
+</table>
+        <details class="quote">
+          <summary>Source code in <code>yaml2rss/domain/template.py</code></summary>
+          <div class="highlight"><pre><span></span><code><span class="nd">@root_validator</span><span class="p">(</span><span class="n">pre</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="nd">@classmethod</span>
+<span class="k">def</span> <span class="nf">validate_type</span><span class="p">(</span><span class="bp">cls</span><span class="p">,</span> <span class="n">values</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Get file mime type if None.</span>
+
+<span class="sd">    Arguments:</span>
+<span class="sd">        cls: Class.</span>
+<span class="sd">        values: Instance initialization values.</span>
+
+<span class="sd">    Returns:</span>
+<span class="sd">        Values with required modifications.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">if</span> <span class="s2">&quot;type&quot;</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">values</span> <span class="ow">or</span> <span class="n">values</span><span class="p">[</span><span class="s2">&quot;type&quot;</span><span class="p">]</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="n">values</span><span class="p">[</span><span class="s2">&quot;type&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">mime</span><span class="o">.</span><span class="n">from_file</span><span class="p">(</span><span class="n">values</span><span class="p">[</span><span class="s2">&quot;file&quot;</span><span class="p">])</span>
+
+    <span class="k">if</span> <span class="n">values</span><span class="p">[</span><span class="s2">&quot;type&quot;</span><span class="p">]</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">SUPPORTED_AUDIO_MIME_TYPES</span><span class="p">:</span>
+        <span class="k">raise</span> <span class="n">ValidationError</span><span class="p">()</span>
+
+    <span class="k">return</span> <span class="n">values</span>
+</code></pre></div>
+        </details>
+    </div>
+
+  </div>
+
+
+
+
+
+  </div>
+
+    </div>
+
+  </div>
+
+
+
+  <div class="doc doc-object doc-class">
+
+
+
+<h2 id="yaml2rss.domain.template.PodcastEpisodeConfig" class="doc doc-heading">
+        <code>
+PodcastEpisodeConfig            (<a class="autorefs autorefs-internal" title="yaml2rss.domain.template.EpisodeConfig" href="#yaml2rss.domain.template.EpisodeConfig">EpisodeConfig</a>)
+        </code>
+
+
+  <span class="doc doc-properties">
+      <small class="doc doc-property doc-property-pydantic-model"><code>pydantic-model</code></small>
+  </span>
+
+</h2>
+
+    <div class="doc doc-contents ">
+
+      <p>Extension of episode configuration for a podcast episode.</p>
+
+<p><strong>Parameters:</strong></p>
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Type</th>
+      <th>Description</th>
+      <th>Default</th>
+    </tr>
+  </thead>
+  <tbody>
+      <tr>
+        <td><code>file_details</code></td>
+        <td></td>
+        <td><p>Details of the podcast audio file.</p></td>
+        <td><em>required</em></td>
+      </tr>
+  </tbody>
+</table>
+        <details class="quote">
+          <summary>Source code in <code>yaml2rss/domain/template.py</code></summary>
+          <div class="highlight"><pre><span></span><code><span class="k">class</span> <span class="nc">PodcastEpisodeConfig</span><span class="p">(</span><span class="n">EpisodeConfig</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Extension of episode configuration for a podcast episode.</span>
+
+<span class="sd">    Arguments:</span>
+<span class="sd">        file_details: Details of the podcast audio file.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="n">file_details</span><span class="p">:</span> <span class="n">FileDetails</span>
+</code></pre></div>
+        </details>
+
+
+
+  <div class="doc doc-children">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+
+    </div>
+
+  </div>
+
+
+
+  <div class="doc doc-object doc-class">
+
+
+
+<h2 id="yaml2rss.domain.template.PodcastSeasonConfig" class="doc doc-heading">
+        <code>
+PodcastSeasonConfig            (<a class="autorefs autorefs-internal" title="yaml2rss.domain.template.SeasonConfig" href="#yaml2rss.domain.template.SeasonConfig">SeasonConfig</a>)
+        </code>
+
+
+  <span class="doc doc-properties">
+      <small class="doc doc-property doc-property-pydantic-model"><code>pydantic-model</code></small>
+  </span>
+
+</h2>
+
+    <div class="doc doc-contents ">
+
+      <p>Pocast season configuration.</p>
+
+<p><strong>Parameters:</strong></p>
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Type</th>
+      <th>Description</th>
+      <th>Default</th>
+    </tr>
+  </thead>
+  <tbody>
+      <tr>
+        <td><code>episodes</code></td>
+        <td></td>
+        <td><p>List of podcast season episodes configuration.</p></td>
+        <td><em>required</em></td>
+      </tr>
+  </tbody>
+</table>
+        <details class="quote">
+          <summary>Source code in <code>yaml2rss/domain/template.py</code></summary>
+          <div class="highlight"><pre><span></span><code><span class="k">class</span> <span class="nc">PodcastSeasonConfig</span><span class="p">(</span><span class="n">SeasonConfig</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Pocast season configuration.</span>
+
+<span class="sd">    Arguments:</span>
+<span class="sd">        episodes: List of podcast season episodes configuration.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="n">episodes</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="n">PodcastEpisodeConfig</span><span class="p">]</span>
+</code></pre></div>
+        </details>
+
+
+
+  <div class="doc doc-children">
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+
+    </div>
+
+  </div>
+
+
+
+  <div class="doc doc-object doc-class">
+
+
+
+<h2 id="yaml2rss.domain.template.PodcastTemplateConfig" class="doc doc-heading">
+        <code>
+PodcastTemplateConfig            (<a class="autorefs autorefs-internal" title="yaml2rss.domain.template.TemplateConfig" href="#yaml2rss.domain.template.TemplateConfig">TemplateConfig</a>)
+        </code>
+
+
+  <span class="doc doc-properties">
+      <small class="doc doc-property doc-property-pydantic-model"><code>pydantic-model</code></small>
+  </span>
+
+</h2>
+
+    <div class="doc doc-contents ">
+
+      <p>Template for podcast RSS feed.</p>
+
+<p><strong>Parameters:</strong></p>
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Type</th>
+      <th>Description</th>
+      <th>Default</th>
+    </tr>
+  </thead>
+  <tbody>
+      <tr>
+        <td><code>image_path</code></td>
+        <td></td>
+        <td><p>Path to feed image relative to <code>link</code>.</p></td>
+        <td><em>required</em></td>
+      </tr>
+      <tr>
+        <td><code>image_title</code></td>
+        <td></td>
+        <td><p>Feed image title.</p></td>
+        <td><em>required</em></td>
+      </tr>
+      <tr>
+        <td><code>files_root_url</code></td>
+        <td></td>
+        <td><p>Base URL for the feed audio files.</p></td>
+        <td><em>required</em></td>
+      </tr>
+      <tr>
+        <td><code>files_root_path</code></td>
+        <td></td>
+        <td><p>Path to the directory containing the audio files.</p></td>
+        <td><em>required</em></td>
+      </tr>
+      <tr>
+        <td><code>seasons</code></td>
+        <td></td>
+        <td><p>Podcast seasons configuration.</p></td>
+        <td><em>required</em></td>
+      </tr>
+  </tbody>
+</table>
+        <details class="quote">
+          <summary>Source code in <code>yaml2rss/domain/template.py</code></summary>
+          <div class="highlight"><pre><span></span><code><span class="k">class</span> <span class="nc">PodcastTemplateConfig</span><span class="p">(</span><span class="n">TemplateConfig</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Template for podcast RSS feed.</span>
+
+<span class="sd">    Arguments:</span>
+<span class="sd">        image_path: Path to feed image relative to `link`.</span>
+<span class="sd">        image_title: Feed image title.</span>
+<span class="sd">        files_root_url: Base URL for the feed audio files.</span>
+<span class="sd">        files_root_path: Path to the directory containing the audio files.</span>
+<span class="sd">        seasons: Podcast seasons configuration.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="n">image_path</span><span class="p">:</span> <span class="n">FilePath</span>
+    <span class="n">image_title</span><span class="p">:</span> <span class="nb">str</span>
+    <span class="n">files_root_url</span><span class="p">:</span> <span class="n">HttpUrl</span>
+    <span class="n">files_root_path</span><span class="p">:</span> <span class="n">DirectoryPath</span> <span class="o">=</span> <span class="n">Path</span><span class="p">(</span><span class="s2">&quot;&quot;</span><span class="p">)</span>
+    <span class="n">seasons</span><span class="p">:</span> <span class="n">PodcastSeasonsConfig</span>
+
+    <span class="nd">@root_validator</span><span class="p">(</span><span class="n">pre</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+    <span class="nd">@classmethod</span>
+    <span class="k">def</span> <span class="nf">validate_image_title</span><span class="p">(</span><span class="bp">cls</span><span class="p">,</span> <span class="n">values</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Set the episode author to the feed author if None.</span>
+
+<span class="sd">        Arguments:</span>
+<span class="sd">            cls: Class.</span>
+<span class="sd">            values: Instance initialization values.</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">            Values with required modifications.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="s2">&quot;image_title&quot;</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">values</span> <span class="ow">or</span> <span class="n">values</span><span class="p">[</span><span class="s2">&quot;image_title&quot;</span><span class="p">]</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="n">values</span><span class="p">[</span><span class="s2">&quot;image_title&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">values</span><span class="p">[</span><span class="s2">&quot;title&quot;</span><span class="p">]</span>
+
+        <span class="k">return</span> <span class="n">values</span>
+
+    <span class="nd">@root_validator</span><span class="p">(</span><span class="n">pre</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+    <span class="nd">@classmethod</span>
+    <span class="k">def</span> <span class="nf">validate_files_root_url</span><span class="p">(</span><span class="bp">cls</span><span class="p">,</span> <span class="n">values</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Set the files root URl to `link` if None.</span>
+
+<span class="sd">        Arguments:</span>
+<span class="sd">            cls: Class.</span>
+<span class="sd">            values: Instance initialization values.</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">            Values with required modifications.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="s2">&quot;files_root_url&quot;</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">values</span> <span class="ow">or</span> <span class="n">values</span><span class="p">[</span><span class="s2">&quot;files_root_url&quot;</span><span class="p">]</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="n">values</span><span class="p">[</span><span class="s2">&quot;files_root_url&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">values</span><span class="p">[</span><span class="s2">&quot;link&quot;</span><span class="p">]</span>
+
+        <span class="k">return</span> <span class="n">values</span>
+
+    <span class="nd">@root_validator</span><span class="p">(</span><span class="n">pre</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+    <span class="nd">@classmethod</span>
+    <span class="k">def</span> <span class="nf">validate_episode_file</span><span class="p">(</span><span class="bp">cls</span><span class="p">,</span> <span class="n">values</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Add the `files_root_path` to the episodes files.</span>
+
+<span class="sd">        Arguments:</span>
+<span class="sd">            cls: Class.</span>
+<span class="sd">            values: Instance initialization values.</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">            Values with required modifications.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">for</span> <span class="n">season</span> <span class="ow">in</span> <span class="n">values</span><span class="p">[</span><span class="s2">&quot;seasons&quot;</span><span class="p">]:</span>
+            <span class="k">for</span> <span class="n">episode</span> <span class="ow">in</span> <span class="n">season</span><span class="p">[</span><span class="s2">&quot;episodes&quot;</span><span class="p">]:</span>
+                <span class="n">file_details</span><span class="p">:</span> <span class="nb">dict</span> <span class="o">=</span> <span class="n">episode</span><span class="p">[</span><span class="s2">&quot;file_details&quot;</span><span class="p">]</span>
+                <span class="k">if</span> <span class="s2">&quot;file&quot;</span> <span class="ow">in</span> <span class="n">file_details</span> <span class="ow">and</span> <span class="n">file_details</span><span class="p">[</span><span class="s2">&quot;file&quot;</span><span class="p">]</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+                    <span class="n">episode</span><span class="p">[</span><span class="s2">&quot;file_details&quot;</span><span class="p">][</span><span class="s2">&quot;file&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="p">(</span>
+                        <span class="n">values</span><span class="p">[</span><span class="s2">&quot;files_root_path&quot;</span><span class="p">]</span> <span class="o">+</span> <span class="n">file_details</span><span class="p">[</span><span class="s2">&quot;file&quot;</span><span class="p">]</span>
+                    <span class="p">)</span>
+
+        <span class="k">return</span> <span class="n">values</span>
+
+    <span class="nd">@root_validator</span><span class="p">(</span><span class="n">pre</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+    <span class="nd">@classmethod</span>
+    <span class="k">def</span> <span class="nf">validate_episode_url</span><span class="p">(</span><span class="bp">cls</span><span class="p">,</span> <span class="n">values</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Set the episodes URL to `files_root_url` + `file` if None.</span>
+
+<span class="sd">        Arguments:</span>
+<span class="sd">            cls: Class.</span>
+<span class="sd">            values: Instance initialization values.</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">            Values with required modifications.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">for</span> <span class="n">season</span> <span class="ow">in</span> <span class="n">values</span><span class="p">[</span><span class="s2">&quot;seasons&quot;</span><span class="p">]:</span>
+            <span class="k">for</span> <span class="n">episode</span> <span class="ow">in</span> <span class="n">season</span><span class="p">[</span><span class="s2">&quot;episodes&quot;</span><span class="p">]:</span>
+                <span class="k">if</span> <span class="s2">&quot;url&quot;</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">episode</span> <span class="ow">or</span> <span class="n">episode</span><span class="p">[</span><span class="s2">&quot;url&quot;</span><span class="p">]</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+                    <span class="n">episode</span><span class="p">[</span><span class="s2">&quot;url&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="p">(</span>
+                        <span class="n">values</span><span class="p">[</span><span class="s2">&quot;files_root_url&quot;</span><span class="p">]</span>
+                        <span class="o">+</span> <span class="n">episode</span><span class="p">[</span><span class="s2">&quot;file_details&quot;</span><span class="p">][</span><span class="s2">&quot;file&quot;</span><span class="p">]</span>
+                    <span class="p">)</span>
+
+        <span class="k">return</span> <span class="n">values</span>
+</code></pre></div>
+        </details>
+
+
+
+  <div class="doc doc-children">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="doc doc-object doc-method">
+
+
+
+<h3 id="yaml2rss.domain.template.PodcastTemplateConfig.validate_episode_file" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">validate_episode_file</span><span class="p">(</span><span class="n">values</span><span class="p">)</span></code>
+
+  <span class="doc doc-properties">
+      <small class="doc doc-property doc-property-classmethod"><code>classmethod</code></small>
+  </span>
+
+</h3>
+
+    <div class="doc doc-contents ">
+
+      <p>Add the <code>files_root_path</code> to the episodes files.</p>
+
+<p><strong>Parameters:</strong></p>
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Type</th>
+      <th>Description</th>
+      <th>Default</th>
+    </tr>
+  </thead>
+  <tbody>
+      <tr>
+        <td><code>cls</code></td>
+        <td></td>
+        <td><p>Class.</p></td>
+        <td><em>required</em></td>
+      </tr>
+      <tr>
+        <td><code>values</code></td>
+        <td></td>
+        <td><p>Instance initialization values.</p></td>
+        <td><em>required</em></td>
+      </tr>
+  </tbody>
+</table>
+<p><strong>Returns:</strong></p>
+<table>
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td></td>
+      <td><p>Values with required modifications.</p></td>
+    </tr>
+  </tbody>
+</table>
+        <details class="quote">
+          <summary>Source code in <code>yaml2rss/domain/template.py</code></summary>
+          <div class="highlight"><pre><span></span><code><span class="nd">@root_validator</span><span class="p">(</span><span class="n">pre</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="nd">@classmethod</span>
+<span class="k">def</span> <span class="nf">validate_episode_file</span><span class="p">(</span><span class="bp">cls</span><span class="p">,</span> <span class="n">values</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Add the `files_root_path` to the episodes files.</span>
+
+<span class="sd">    Arguments:</span>
+<span class="sd">        cls: Class.</span>
+<span class="sd">        values: Instance initialization values.</span>
+
+<span class="sd">    Returns:</span>
+<span class="sd">        Values with required modifications.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">for</span> <span class="n">season</span> <span class="ow">in</span> <span class="n">values</span><span class="p">[</span><span class="s2">&quot;seasons&quot;</span><span class="p">]:</span>
+        <span class="k">for</span> <span class="n">episode</span> <span class="ow">in</span> <span class="n">season</span><span class="p">[</span><span class="s2">&quot;episodes&quot;</span><span class="p">]:</span>
+            <span class="n">file_details</span><span class="p">:</span> <span class="nb">dict</span> <span class="o">=</span> <span class="n">episode</span><span class="p">[</span><span class="s2">&quot;file_details&quot;</span><span class="p">]</span>
+            <span class="k">if</span> <span class="s2">&quot;file&quot;</span> <span class="ow">in</span> <span class="n">file_details</span> <span class="ow">and</span> <span class="n">file_details</span><span class="p">[</span><span class="s2">&quot;file&quot;</span><span class="p">]</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+                <span class="n">episode</span><span class="p">[</span><span class="s2">&quot;file_details&quot;</span><span class="p">][</span><span class="s2">&quot;file&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="p">(</span>
+                    <span class="n">values</span><span class="p">[</span><span class="s2">&quot;files_root_path&quot;</span><span class="p">]</span> <span class="o">+</span> <span class="n">file_details</span><span class="p">[</span><span class="s2">&quot;file&quot;</span><span class="p">]</span>
+                <span class="p">)</span>
+
+    <span class="k">return</span> <span class="n">values</span>
+</code></pre></div>
+        </details>
+    </div>
+
+  </div>
+
+
+
+  <div class="doc doc-object doc-method">
+
+
+
+<h3 id="yaml2rss.domain.template.PodcastTemplateConfig.validate_episode_url" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">validate_episode_url</span><span class="p">(</span><span class="n">values</span><span class="p">)</span></code>
+
+  <span class="doc doc-properties">
+      <small class="doc doc-property doc-property-classmethod"><code>classmethod</code></small>
+  </span>
+
+</h3>
+
+    <div class="doc doc-contents ">
+
+      <p>Set the episodes URL to <code>files_root_url</code> + <code>file</code> if None.</p>
+
+<p><strong>Parameters:</strong></p>
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Type</th>
+      <th>Description</th>
+      <th>Default</th>
+    </tr>
+  </thead>
+  <tbody>
+      <tr>
+        <td><code>cls</code></td>
+        <td></td>
+        <td><p>Class.</p></td>
+        <td><em>required</em></td>
+      </tr>
+      <tr>
+        <td><code>values</code></td>
+        <td></td>
+        <td><p>Instance initialization values.</p></td>
+        <td><em>required</em></td>
+      </tr>
+  </tbody>
+</table>
+<p><strong>Returns:</strong></p>
+<table>
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td></td>
+      <td><p>Values with required modifications.</p></td>
+    </tr>
+  </tbody>
+</table>
+        <details class="quote">
+          <summary>Source code in <code>yaml2rss/domain/template.py</code></summary>
+          <div class="highlight"><pre><span></span><code><span class="nd">@root_validator</span><span class="p">(</span><span class="n">pre</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="nd">@classmethod</span>
+<span class="k">def</span> <span class="nf">validate_episode_url</span><span class="p">(</span><span class="bp">cls</span><span class="p">,</span> <span class="n">values</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Set the episodes URL to `files_root_url` + `file` if None.</span>
+
+<span class="sd">    Arguments:</span>
+<span class="sd">        cls: Class.</span>
+<span class="sd">        values: Instance initialization values.</span>
+
+<span class="sd">    Returns:</span>
+<span class="sd">        Values with required modifications.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">for</span> <span class="n">season</span> <span class="ow">in</span> <span class="n">values</span><span class="p">[</span><span class="s2">&quot;seasons&quot;</span><span class="p">]:</span>
+        <span class="k">for</span> <span class="n">episode</span> <span class="ow">in</span> <span class="n">season</span><span class="p">[</span><span class="s2">&quot;episodes&quot;</span><span class="p">]:</span>
+            <span class="k">if</span> <span class="s2">&quot;url&quot;</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">episode</span> <span class="ow">or</span> <span class="n">episode</span><span class="p">[</span><span class="s2">&quot;url&quot;</span><span class="p">]</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+                <span class="n">episode</span><span class="p">[</span><span class="s2">&quot;url&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="p">(</span>
+                    <span class="n">values</span><span class="p">[</span><span class="s2">&quot;files_root_url&quot;</span><span class="p">]</span>
+                    <span class="o">+</span> <span class="n">episode</span><span class="p">[</span><span class="s2">&quot;file_details&quot;</span><span class="p">][</span><span class="s2">&quot;file&quot;</span><span class="p">]</span>
+                <span class="p">)</span>
+
+    <span class="k">return</span> <span class="n">values</span>
+</code></pre></div>
+        </details>
+    </div>
+
+  </div>
+
+
+
+  <div class="doc doc-object doc-method">
+
+
+
+<h3 id="yaml2rss.domain.template.PodcastTemplateConfig.validate_files_root_url" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">validate_files_root_url</span><span class="p">(</span><span class="n">values</span><span class="p">)</span></code>
+
+  <span class="doc doc-properties">
+      <small class="doc doc-property doc-property-classmethod"><code>classmethod</code></small>
+  </span>
+
+</h3>
+
+    <div class="doc doc-contents ">
+
+      <p>Set the files root URl to <code>link</code> if None.</p>
+
+<p><strong>Parameters:</strong></p>
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Type</th>
+      <th>Description</th>
+      <th>Default</th>
+    </tr>
+  </thead>
+  <tbody>
+      <tr>
+        <td><code>cls</code></td>
+        <td></td>
+        <td><p>Class.</p></td>
+        <td><em>required</em></td>
+      </tr>
+      <tr>
+        <td><code>values</code></td>
+        <td></td>
+        <td><p>Instance initialization values.</p></td>
+        <td><em>required</em></td>
+      </tr>
+  </tbody>
+</table>
+<p><strong>Returns:</strong></p>
+<table>
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td></td>
+      <td><p>Values with required modifications.</p></td>
+    </tr>
+  </tbody>
+</table>
+        <details class="quote">
+          <summary>Source code in <code>yaml2rss/domain/template.py</code></summary>
+          <div class="highlight"><pre><span></span><code><span class="nd">@root_validator</span><span class="p">(</span><span class="n">pre</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="nd">@classmethod</span>
+<span class="k">def</span> <span class="nf">validate_files_root_url</span><span class="p">(</span><span class="bp">cls</span><span class="p">,</span> <span class="n">values</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Set the files root URl to `link` if None.</span>
+
+<span class="sd">    Arguments:</span>
+<span class="sd">        cls: Class.</span>
+<span class="sd">        values: Instance initialization values.</span>
+
+<span class="sd">    Returns:</span>
+<span class="sd">        Values with required modifications.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">if</span> <span class="s2">&quot;files_root_url&quot;</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">values</span> <span class="ow">or</span> <span class="n">values</span><span class="p">[</span><span class="s2">&quot;files_root_url&quot;</span><span class="p">]</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="n">values</span><span class="p">[</span><span class="s2">&quot;files_root_url&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">values</span><span class="p">[</span><span class="s2">&quot;link&quot;</span><span class="p">]</span>
+
+    <span class="k">return</span> <span class="n">values</span>
+</code></pre></div>
+        </details>
+    </div>
+
+  </div>
+
+
+
+  <div class="doc doc-object doc-method">
+
+
+
+<h3 id="yaml2rss.domain.template.PodcastTemplateConfig.validate_image_title" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">validate_image_title</span><span class="p">(</span><span class="n">values</span><span class="p">)</span></code>
+
+  <span class="doc doc-properties">
+      <small class="doc doc-property doc-property-classmethod"><code>classmethod</code></small>
+  </span>
+
+</h3>
+
+    <div class="doc doc-contents ">
+
+      <p>Set the episode author to the feed author if None.</p>
+
+<p><strong>Parameters:</strong></p>
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Type</th>
+      <th>Description</th>
+      <th>Default</th>
+    </tr>
+  </thead>
+  <tbody>
+      <tr>
+        <td><code>cls</code></td>
+        <td></td>
+        <td><p>Class.</p></td>
+        <td><em>required</em></td>
+      </tr>
+      <tr>
+        <td><code>values</code></td>
+        <td></td>
+        <td><p>Instance initialization values.</p></td>
+        <td><em>required</em></td>
+      </tr>
+  </tbody>
+</table>
+<p><strong>Returns:</strong></p>
+<table>
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td></td>
+      <td><p>Values with required modifications.</p></td>
+    </tr>
+  </tbody>
+</table>
+        <details class="quote">
+          <summary>Source code in <code>yaml2rss/domain/template.py</code></summary>
+          <div class="highlight"><pre><span></span><code><span class="nd">@root_validator</span><span class="p">(</span><span class="n">pre</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="nd">@classmethod</span>
+<span class="k">def</span> <span class="nf">validate_image_title</span><span class="p">(</span><span class="bp">cls</span><span class="p">,</span> <span class="n">values</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Set the episode author to the feed author if None.</span>
+
+<span class="sd">    Arguments:</span>
+<span class="sd">        cls: Class.</span>
+<span class="sd">        values: Instance initialization values.</span>
+
+<span class="sd">    Returns:</span>
+<span class="sd">        Values with required modifications.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">if</span> <span class="s2">&quot;image_title&quot;</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">values</span> <span class="ow">or</span> <span class="n">values</span><span class="p">[</span><span class="s2">&quot;image_title&quot;</span><span class="p">]</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="n">values</span><span class="p">[</span><span class="s2">&quot;image_title&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">values</span><span class="p">[</span><span class="s2">&quot;title&quot;</span><span class="p">]</span>
+
+    <span class="k">return</span> <span class="n">values</span>
+</code></pre></div>
+        </details>
+    </div>
+
+  </div>
+
+
+
+
+
+  </div>
+
+    </div>
+
+  </div>
+
+
+
+  <div class="doc doc-object doc-class">
+
+
+
+<h2 id="yaml2rss.domain.template.SeasonConfig" class="doc doc-heading">
+        <code>
+SeasonConfig            (<span title="pydantic.main.BaseModel">BaseModel</span>)
+        </code>
+
+
+  <span class="doc doc-properties">
+      <small class="doc doc-property doc-property-pydantic-model"><code>pydantic-model</code></small>
+  </span>
+
+</h2>
+
+    <div class="doc doc-contents ">
+
+      <p>Season configuration.</p>
+
+<p><strong>Parameters:</strong></p>
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Type</th>
+      <th>Description</th>
+      <th>Default</th>
+    </tr>
+  </thead>
+  <tbody>
+      <tr>
+        <td><code>episodes</code></td>
+        <td></td>
+        <td><p>List of season episodes configuration.</p></td>
+        <td><em>required</em></td>
+      </tr>
+  </tbody>
+</table>
+        <details class="quote">
+          <summary>Source code in <code>yaml2rss/domain/template.py</code></summary>
+          <div class="highlight"><pre><span></span><code><span class="k">class</span> <span class="nc">SeasonConfig</span><span class="p">(</span><span class="n">BaseModel</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Season configuration.</span>
+
+<span class="sd">    Arguments:</span>
+<span class="sd">        episodes: List of season episodes configuration.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="n">episodes</span><span class="p">:</span> <span class="n">Sequence</span><span class="p">[</span><span class="n">EpisodeConfig</span><span class="p">]</span>
+</code></pre></div>
+        </details>
+
+
+
+  <div class="doc doc-children">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+
+    </div>
+
+  </div>
+
+
+
+  <div class="doc doc-object doc-class">
+
+
+
+<h2 id="yaml2rss.domain.template.TemplateConfig" class="doc doc-heading">
+        <code>
+TemplateConfig            (<span title="pydantic.main.BaseModel">BaseModel</span>)
+        </code>
+
+
+  <span class="doc doc-properties">
+      <small class="doc doc-property doc-property-pydantic-model"><code>pydantic-model</code></small>
+  </span>
+
+</h2>
+
+    <div class="doc doc-contents ">
+
+      <p>Generic feed template configuration.</p>
+
+<p><strong>Attributes:</strong></p>
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+      <tr>
+        <td><code>title</code></td>
+        <td><code>str</code></td>
+        <td><p>Feed title.</p></td>
+      </tr>
+      <tr>
+        <td><code>description</code></td>
+        <td><code>str</code></td>
+        <td><p>Feed description/summary.</p></td>
+      </tr>
+      <tr>
+        <td><code>link</code></td>
+        <td><code>HttpUrl</code></td>
+        <td><p>Feed home page link (base URL).</p></td>
+      </tr>
+      <tr>
+        <td><code>feed_path</code></td>
+        <td><code>Path</code></td>
+        <td><p>Path of the feed XML file relative to <code>link</code>.</p></td>
+      </tr>
+      <tr>
+        <td><code>author</code></td>
+        <td><code>str</code></td>
+        <td><p>Feed author.</p></td>
+      </tr>
+      <tr>
+        <td><code>email</code></td>
+        <td><code>EmailStr</code></td>
+        <td><p>Feed author email.</p></td>
+      </tr>
+      <tr>
+        <td><code>copyright</code></td>
+        <td><code>str</code></td>
+        <td><p>Feed copyright notice.</p></td>
+      </tr>
+      <tr>
+        <td><code>language</code></td>
+        <td><code>str</code></td>
+        <td><p>Feed language two-letter code.</p></td>
+      </tr>
+      <tr>
+        <td><code>last_build_date</code></td>
+        <td><code>datetime</code></td>
+        <td><p>Feed last build date.</p></td>
+      </tr>
+      <tr>
+        <td><code>seaons</code></td>
+        <td></td>
+        <td><p>Feed seasons configuration.</p></td>
+      </tr>
+  </tbody>
+</table>
+        <details class="quote">
+          <summary>Source code in <code>yaml2rss/domain/template.py</code></summary>
+          <div class="highlight"><pre><span></span><code><span class="k">class</span> <span class="nc">TemplateConfig</span><span class="p">(</span><span class="n">BaseModel</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Generic feed template configuration.</span>
+
+<span class="sd">    Attributes:</span>
+<span class="sd">        title: Feed title.</span>
+<span class="sd">        description: Feed description/summary.</span>
+<span class="sd">        link: Feed home page link (base URL).</span>
+<span class="sd">        feed_path: Path of the feed XML file relative to `link`.</span>
+<span class="sd">        author: Feed author.</span>
+<span class="sd">        email: Feed author email.</span>
+<span class="sd">        copyright: Feed copyright notice.</span>
+<span class="sd">        language: Feed language two-letter code.</span>
+<span class="sd">        last_build_date: Feed last build date.</span>
+<span class="sd">        seaons: Feed seasons configuration.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="n">title</span><span class="p">:</span> <span class="nb">str</span>
+    <span class="n">description</span><span class="p">:</span> <span class="nb">str</span>
+    <span class="n">link</span><span class="p">:</span> <span class="n">HttpUrl</span>
+    <span class="n">feed_path</span><span class="p">:</span> <span class="n">Path</span>
+    <span class="n">author</span><span class="p">:</span> <span class="nb">str</span>
+    <span class="n">email</span><span class="p">:</span> <span class="n">EmailStr</span>
+    <span class="n">copyright</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="kc">None</span>
+    <span class="n">language</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s2">&quot;en&quot;</span>
+    <span class="n">last_build_date</span><span class="p">:</span> <span class="n">datetime</span> <span class="o">=</span> <span class="n">datetime</span><span class="o">.</span><span class="n">now</span><span class="p">()</span>
+    <span class="n">seasons</span><span class="p">:</span> <span class="n">SeasonsConfig</span>
+
+    <span class="nd">@root_validator</span><span class="p">(</span><span class="n">pre</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+    <span class="nd">@classmethod</span>
+    <span class="k">def</span> <span class="nf">validate_copyright</span><span class="p">(</span><span class="bp">cls</span><span class="p">,</span> <span class="n">values</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Set the copyright notice if None.</span>
+
+<span class="sd">        Arguments:</span>
+<span class="sd">            cls: Class.</span>
+<span class="sd">            values: Instance initialization values.</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">            Values with required modifications.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="s2">&quot;copyright&quot;</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">values</span> <span class="ow">or</span> <span class="n">values</span><span class="p">[</span><span class="s2">&quot;copyright&quot;</span><span class="p">]</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="n">values</span><span class="p">[</span><span class="s2">&quot;copyright&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;Copyright </span><span class="si">{</span><span class="n">values</span><span class="p">[</span><span class="s1">&#39;author&#39;</span><span class="p">]</span><span class="si">}</span><span class="s2">.&quot;</span>
+
+        <span class="k">return</span> <span class="n">values</span>
+
+    <span class="nd">@root_validator</span><span class="p">(</span><span class="n">pre</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+    <span class="nd">@classmethod</span>
+    <span class="k">def</span> <span class="nf">validate_episode_author</span><span class="p">(</span><span class="bp">cls</span><span class="p">,</span> <span class="n">values</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Set the episode author to the feed author if None.</span>
+
+<span class="sd">        Arguments:</span>
+<span class="sd">            cls: Class.</span>
+<span class="sd">            values: Instance initialization values.</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">            Values with required modifications.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">for</span> <span class="n">season</span> <span class="ow">in</span> <span class="n">values</span><span class="p">[</span><span class="s2">&quot;seasons&quot;</span><span class="p">]:</span>
+            <span class="k">for</span> <span class="n">episode</span> <span class="ow">in</span> <span class="n">season</span><span class="p">[</span><span class="s2">&quot;episodes&quot;</span><span class="p">]:</span>
+                <span class="k">if</span> <span class="s2">&quot;author&quot;</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">episode</span> <span class="ow">or</span> <span class="n">episode</span><span class="p">[</span><span class="s2">&quot;author&quot;</span><span class="p">]</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+                    <span class="n">episode</span><span class="p">[</span><span class="s2">&quot;author&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">values</span><span class="p">[</span><span class="s2">&quot;author&quot;</span><span class="p">]</span>
+
+        <span class="k">return</span> <span class="n">values</span>
+</code></pre></div>
+        </details>
+
+
+
+  <div class="doc doc-children">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="doc doc-object doc-method">
+
+
+
+<h3 id="yaml2rss.domain.template.TemplateConfig.validate_copyright" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">validate_copyright</span><span class="p">(</span><span class="n">values</span><span class="p">)</span></code>
+
+  <span class="doc doc-properties">
+      <small class="doc doc-property doc-property-classmethod"><code>classmethod</code></small>
+  </span>
+
+</h3>
+
+    <div class="doc doc-contents ">
+
+      <p>Set the copyright notice if None.</p>
+
+<p><strong>Parameters:</strong></p>
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Type</th>
+      <th>Description</th>
+      <th>Default</th>
+    </tr>
+  </thead>
+  <tbody>
+      <tr>
+        <td><code>cls</code></td>
+        <td></td>
+        <td><p>Class.</p></td>
+        <td><em>required</em></td>
+      </tr>
+      <tr>
+        <td><code>values</code></td>
+        <td></td>
+        <td><p>Instance initialization values.</p></td>
+        <td><em>required</em></td>
+      </tr>
+  </tbody>
+</table>
+<p><strong>Returns:</strong></p>
+<table>
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td></td>
+      <td><p>Values with required modifications.</p></td>
+    </tr>
+  </tbody>
+</table>
+        <details class="quote">
+          <summary>Source code in <code>yaml2rss/domain/template.py</code></summary>
+          <div class="highlight"><pre><span></span><code><span class="nd">@root_validator</span><span class="p">(</span><span class="n">pre</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="nd">@classmethod</span>
+<span class="k">def</span> <span class="nf">validate_copyright</span><span class="p">(</span><span class="bp">cls</span><span class="p">,</span> <span class="n">values</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Set the copyright notice if None.</span>
+
+<span class="sd">    Arguments:</span>
+<span class="sd">        cls: Class.</span>
+<span class="sd">        values: Instance initialization values.</span>
+
+<span class="sd">    Returns:</span>
+<span class="sd">        Values with required modifications.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">if</span> <span class="s2">&quot;copyright&quot;</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">values</span> <span class="ow">or</span> <span class="n">values</span><span class="p">[</span><span class="s2">&quot;copyright&quot;</span><span class="p">]</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="n">values</span><span class="p">[</span><span class="s2">&quot;copyright&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;Copyright </span><span class="si">{</span><span class="n">values</span><span class="p">[</span><span class="s1">&#39;author&#39;</span><span class="p">]</span><span class="si">}</span><span class="s2">.&quot;</span>
+
+    <span class="k">return</span> <span class="n">values</span>
+</code></pre></div>
+        </details>
+    </div>
+
+  </div>
+
+
+
+  <div class="doc doc-object doc-method">
+
+
+
+<h3 id="yaml2rss.domain.template.TemplateConfig.validate_episode_author" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">validate_episode_author</span><span class="p">(</span><span class="n">values</span><span class="p">)</span></code>
+
+  <span class="doc doc-properties">
+      <small class="doc doc-property doc-property-classmethod"><code>classmethod</code></small>
+  </span>
+
+</h3>
+
+    <div class="doc doc-contents ">
+
+      <p>Set the episode author to the feed author if None.</p>
+
+<p><strong>Parameters:</strong></p>
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Type</th>
+      <th>Description</th>
+      <th>Default</th>
+    </tr>
+  </thead>
+  <tbody>
+      <tr>
+        <td><code>cls</code></td>
+        <td></td>
+        <td><p>Class.</p></td>
+        <td><em>required</em></td>
+      </tr>
+      <tr>
+        <td><code>values</code></td>
+        <td></td>
+        <td><p>Instance initialization values.</p></td>
+        <td><em>required</em></td>
+      </tr>
+  </tbody>
+</table>
+<p><strong>Returns:</strong></p>
+<table>
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td></td>
+      <td><p>Values with required modifications.</p></td>
+    </tr>
+  </tbody>
+</table>
+        <details class="quote">
+          <summary>Source code in <code>yaml2rss/domain/template.py</code></summary>
+          <div class="highlight"><pre><span></span><code><span class="nd">@root_validator</span><span class="p">(</span><span class="n">pre</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="nd">@classmethod</span>
+<span class="k">def</span> <span class="nf">validate_episode_author</span><span class="p">(</span><span class="bp">cls</span><span class="p">,</span> <span class="n">values</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Set the episode author to the feed author if None.</span>
+
+<span class="sd">    Arguments:</span>
+<span class="sd">        cls: Class.</span>
+<span class="sd">        values: Instance initialization values.</span>
+
+<span class="sd">    Returns:</span>
+<span class="sd">        Values with required modifications.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">for</span> <span class="n">season</span> <span class="ow">in</span> <span class="n">values</span><span class="p">[</span><span class="s2">&quot;seasons&quot;</span><span class="p">]:</span>
+        <span class="k">for</span> <span class="n">episode</span> <span class="ow">in</span> <span class="n">season</span><span class="p">[</span><span class="s2">&quot;episodes&quot;</span><span class="p">]:</span>
+            <span class="k">if</span> <span class="s2">&quot;author&quot;</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">episode</span> <span class="ow">or</span> <span class="n">episode</span><span class="p">[</span><span class="s2">&quot;author&quot;</span><span class="p">]</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+                <span class="n">episode</span><span class="p">[</span><span class="s2">&quot;author&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">values</span><span class="p">[</span><span class="s2">&quot;author&quot;</span><span class="p">]</span>
+
+    <span class="k">return</span> <span class="n">values</span>
+</code></pre></div>
+        </details>
+    </div>
+
+  </div>
+
+
+
+
+
+  </div>
+
+    </div>
+
+  </div>
+
+
+
+
+  <div class="doc doc-object doc-function">
+
+
+
+<h2 id="yaml2rss.domain.template.render" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">render</span><span class="p">(</span><span class="n">template</span><span class="p">,</span> <span class="n">template_config</span><span class="p">)</span></code>
+
+
+</h2>
+
+    <div class="doc doc-contents ">
+
+      <p>Render the template with the passed configuration.</p>
+
+<p><strong>Parameters:</strong></p>
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Type</th>
+      <th>Description</th>
+      <th>Default</th>
+    </tr>
+  </thead>
+  <tbody>
+      <tr>
+        <td><code>template</code></td>
+        <td><code>Template</code></td>
+        <td><p>Jinja template.</p></td>
+        <td><em>required</em></td>
+      </tr>
+      <tr>
+        <td><code>template_config</code></td>
+        <td><code>TemplateConfig</code></td>
+        <td><p>Template variable values to replace.</p></td>
+        <td><em>required</em></td>
+      </tr>
+  </tbody>
+</table>
+<p><strong>Returns:</strong></p>
+<table>
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>str</code></td>
+      <td><p>Rendered template.</p></td>
+    </tr>
+  </tbody>
+</table>
+        <details class="quote">
+          <summary>Source code in <code>yaml2rss/domain/template.py</code></summary>
+          <div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">render</span><span class="p">(</span><span class="n">template</span><span class="p">:</span> <span class="n">jinja2</span><span class="o">.</span><span class="n">Template</span><span class="p">,</span> <span class="n">template_config</span><span class="p">:</span> <span class="n">TemplateConfig</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
+    <span class="sd">&quot;&quot;&quot;Render the template with the passed configuration.</span>
+
+<span class="sd">    Arguments:</span>
+<span class="sd">        template: Jinja template.</span>
+<span class="sd">        template_config: Template variable values to replace.</span>
+
+<span class="sd">    Returns:</span>
+<span class="sd">        Rendered template.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">return</span> <span class="n">template</span><span class="o">.</span><span class="n">render</span><span class="p">(</span><span class="n">template_config</span><span class="p">)</span>
+</code></pre></div>
+        </details>
+    </div>
+
+  </div>
+
+
+
+
+
+
+  </div>
+
+    </div>
+
+  </div>
+
+  <hr>
+<div class="md-source-file">
+  <small>
+    
+      Last update:
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago"><span class="timeago" datetime="2022-07-27T07:39:45+00:00" locale="en"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2022-07-27</span>
+      
+    
+  </small>
+</div>
+
+              
+            </article>
+            
+          </div>
+        </div>
+        
+          <a href="#" class="md-top md-icon" data-md-component="top" hidden>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+            Back to top
+          </a>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+    <nav class="md-footer__inner md-grid" aria-label="Footer" >
+      
+        
+        <a href="../../__init__/" class="md-footer__link md-footer__link--prev" aria-label="Previous:   init  " rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+                init  
+            </div>
+          </div>
+        </a>
+      
+      
+        
+        <a href="../../entrypoint/cli/main/" class="md-footer__link md-footer__link--next" aria-label="Next: Main" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              Main
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.instant", "navigation.top"], "search": "../../../assets/javascripts/workers/search.b97dbffb.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.6c7ad80a.min.js"></script>
+      
+        <script src="../../../js/timeago.min.js"></script>
+      
+        <script src="../../../js/timeago_mkdocs_material.js"></script>
+      
+    
+  </body>
+</html>

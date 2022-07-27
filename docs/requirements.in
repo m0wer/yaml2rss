@@ -1,8 +1,0 @@
--c ../requirements.txt
-
-mkdocs
-mkdocs-autolinks-plugin
-mkdocs-gen-files
-mkdocs-git-revision-date-localized-plugin
-mkdocs-material
-mkdocstrings
